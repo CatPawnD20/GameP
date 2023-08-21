@@ -1,7 +1,7 @@
 # GameP
 Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında içinde farklı oyun tiplerini barındırabilecek birden çok oyun odası olan bir yapıda  tasarlanmıştır.
 
-Geliştirme aşamasında yazdığım ve pekçok script'in başında bulunan açıklamalar size o element hakkında bir fikir verebilir. Lakin güncel olmayan pek çoğuna rast gelebilirsiniz.
+Geliştirme aşamasında yazdığım ve pek çok script'in başında bulunan açıklamalar size o element hakkında bir fikir verebilir. Lakin güncel olmayan pek çoğuna rast gelebilirsiniz.
 
 Uygulamanın hiçbir noktasında kullanıcı tarafında önemli bir işlem yapılmamıştır. Tüm işlemler server tarafında hesaplanmış ve kullanıcılara sadece bu hesapların sonucu gönderilmiştir. Kullanıcıdan alınınan veriler de kontrol edilmeden kullanılmamıştır.<br>
 Dökümantasyon için OneNote ve süreçlerin UML diagramları için Miro kullanılmıştır.<br>
