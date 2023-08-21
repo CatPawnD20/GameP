@@ -13,6 +13,9 @@ OfflineScene, loginScene, lobbyScene ve tableScene olmak üzere 4 scene içermek
 ---Player.cs---<br>
 Tüm Network işlemlerini içinde bulabilirsiniz.<br>
 
+--ISeatList.cs---<br>
+Bir masada poker oyununa oturan kişileri ve kişilere ait oyun verilerini tutmak amacı ile seatList yapısı temel olarak kullanılmış. Bir çok işlem için iskelet olan bu yapının tüm işlemleri ISeatList.cs çatısı altında bulabilirsiniz.<br>
+
 ----Network Altyapısı---<br>
 Unity'nin Mirror Framework'ü üle sağlanmıştır. <br>
 Bununla beraber ileride başka bir network altyapısının kullanılabilme ihtimali göz önünde bulundurularak mirror'un sağladığı gelişmiş özellikler nadiren kullanılmıştır.<br>
