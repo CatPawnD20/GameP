@@ -7,6 +7,9 @@ Uygulamanın hiçbir noktasında kullanıcı tarafında önemli bir işlem yapı
 Dökümantasyon için OneNote ve süreçlerin UML diagramları için Miro kullanılmıştır.<br>
 Geliştirme sürecinin uzamasından ötürü kolay yahut ekstra işlemler sonraya bırakılmıştır.<br>
 
+---Scene Listesi---<br>
+OfflineScene, loginScene, lobbyScene ve tableScene olmak üzere 4 scene içermektedir.<br>
+
 ---Player.cs---<br>
 Tüm Network işlemlerini içinde bulabilirsiniz.<br>
 
