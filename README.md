@@ -3,6 +3,7 @@ Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında
 Geliştirme aşamasında olan bu oyunun kodlarını okurken scriptlerdeki yorumlar'ı takip ETMEMENİZİ öneririm. Şuan için sadece kendime not olması amacıyla yazılmışlardır. <br>
 Uygulamanın hiçbir noktasında kullanıcı tarafında önemli bir işlem yapılmamıştır. Tüm işlemler server tarafında hesaplanmış ve kullanıcılara sadece bu hesapların sonucu gönderilmiştir. Kullanıcıdan alınınan veriler de kontrol edilmeden kullanılmamıştır.<br>
 Dökümantasyon için OneNote ve süreçlerin UML diagramları için Miro kullanılmıştır.<br>
+Geliştirme sürecinin uzamasından ötürü kolay yahut ekstra işlemler sonraya bırakılmıştır.<br>
 ----Network Altyapısı---<br>
 Unity'nin Mirror Framework'ü üle sağlanmıştır. <br>
 Bununla beraber ileride başka bir network altyapısının kullanılabilme ihtimali göz önünde bulundurularak mirror'un sağladığı gelişmiş özellikler nadiren kullanılmıştır.<br>
