@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5232430685690697874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2915416772160226320}
+  - component: {fileID: 3959552225771884417}
+  m_Layer: 0
+  m_Name: GameUISpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2915416772160226320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232430685690697874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 420.19205, y: 218.68962, z: -28.526773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3959552225771884417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232430685690697874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda1eff7ad3db46bba6eab29b76069b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncID: 
+  sixPlayerScene: {fileID: 2749436737165110946, guid: 5d618e3b49e724dcaaaae80122d8f61d, type: 3}
+  eightPlayerScene: {fileID: 39515177033898189, guid: 0c955713da26e4f1597d7f4ed7c44795, type: 3}
+  sixPlayerGameScene: {fileID: 8405788366788480911, guid: 1fbfc608bf4c1495e84e982cf3e9d686, type: 3}
+  eightPlayerGameScene: {fileID: 704865475746352596, guid: 5a64fbc6b6dcf459d9eab2edf7fd4cd5, type: 3}
+  sitButtonPrefab: {fileID: 1452147524748778429, guid: 541de1539e5454686872744b82ff8702, type: 3}
+  cardPrefab: {fileID: 7306137732675350851, guid: 874c74e6869884d1cad2764901ed3a63, type: 3}
+  cardBackPrefab: {fileID: 4875814940371019261, guid: 6a019a23c418443488c36bda6e7f1c02, type: 3}
