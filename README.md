@@ -3,9 +3,9 @@ Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında
 
 Geliştirme aşamasında yazdığım ve pek çok script'in başında bulunan açıklamalar size o element hakkında bir fikir verebilir. Lakin güncel olmayan pek çoğuna rast gelebilirsiniz.
 
-Uygulamanın hiçbir noktasında kullanıcı tarafında önemli bir işlem yapılmamıştır. Tüm işlemler server tarafında hesaplanmış ve kullanıcılara sadece bu hesapların sonucu gönderilmiştir. Kullanıcıdan alınınan veriler de kontrol edilmeden kullanılmamıştır.<br>
+Uygulamanın hiçbir noktasında kullanıcı tarafında önemli bir işlem yapılmamıştır. Tüm işlemler server tarafında hesaplanmış ve kullanıcılara sadece bu hesapların sonucu gönderilmiştir. Kullanıcıdan alınınan veriler kontrol edilmeden kullanılmamıştır.<br>
 Dökümantasyon için OneNote ve süreçlerin UML diagramları için Miro kullanılmıştır.<br>
-Geliştirme sürecinin uzamasından ötürü kolay yahut ekstra işlemler sonraya bırakılmıştır.<br>
+Geliştirme sürecinin iyiliği adına kolay yahut ekstra işlemler sonraya bırakılmıştır.<br>
 
 ---Scene Listesi---<br>
 OfflineScene, loginScene, lobbyScene ve tableScene olmak üzere 4 scene içermektedir.<br>
@@ -28,26 +28,8 @@ Ağ üzerinde yollanacak kullanıcı bilgilerinin şifrelenmesinde hangi yöntem
 Loginler ve logoutlar sorunsuzca Database'e kayıt ediliyor.<br>
 Oyunu kullanıcının nasıl kapattığından bağımsız şekilde logout kayıt işlemi gerçekleşiyor.<br>
 
-----User Tipleri---<br>
--Admin<br>
--Operator<br>
--Player<br>
-
-----Oyun Oluşturma---<br>
-Uygulama aktif edildiğinde aktif bir oyun bulunmaz. Admin bir masa yaratma işlemi gerçekleştirir. Burada Masa ve üstünde oynanacak oyun birbirinden bağımsız tasarlanmıştır. Şuan için sadece OmanaEngine bulunuyor lakin ilerde oyun sayısında artış olursa admin bu masalarda o oyunları da oynatabilir.<br>
-Oyun yaratıldığında masa için TableGameManager oluşturulur. <br>
-Bu eleman oyunun geri kalanı ile masa arasındaki bağlantıyı sağlar ve oyunu yönetmek için 5 eleman yaratır. <br>
-1-)TablePlayerManager <br>
-2-)GamePlayerManager<br>
-3-)GameUISpawnManager<br>
-4-)GamePlayerSpawnManager<br>
-5-)OmahaEngine<br>
-Omaha engine, omaha oyununa ait tüm işlemleri gerçekleştirir. İleride yeni bir oyun eklenmesi için sadece bu eleman'ın değiştirilmesi yetecektir.
-Omaha Engine oyunu yönetmek için 3 elemana sahiptir. <br>
-1-) TurnManager<br>
-2-) ChipManager<br>
-3-) Dealer<br>
-Oyun oluşturma işlemi işlemi yapan admin'in adı ile birlikte database'e kayıt edilir.<br>
+---Online Kullanıcıların Yönetilmesi---<br>
+VisitorArea elemanı applicationda online olan oyuncuların yönetilmesinden ve kullanıcı listesinden sorumludur.
 
 ---Kullanıcı Oluşturma---<br>
 Admin tarafından başlangıç bakiyesi ile birlikte yaratılıyorlar.<br>
@@ -57,6 +39,31 @@ Kullanıcı oluşturma işlemi işlemi yapan admin'in adı ile birlikte database
 
 ---Bakiye Ekleme---(şuan mevcut değil)<br>
 ---Bakiye Çekme---(şuan mevcut değil)<br>
+
+----User Tipleri---<br>
+-Admin<br>
+-Operator<br>
+-Player<br>
+
+----Oyun Oluşturma---<br>
+Uygulama aktif edildiğinde aktif bir oyun bulunmaz. Admin bir masa yaratma işlemi gerçekleştirirmek istediğinde;<br>
+SpawnManager bu işlemi gerçekleştirir. Oluşturulan masa TableManager elemanına bildirilir ve tüm masa yönetim işlemleri bu eleman tarafından yapılır.<br>
+Burada Masa ve üstünde oynanacak oyun birbirinden bağımsız tasarlanmıştır.<br>
+
+Şuan için sadece OmanaEngine bulunuyor lakin ilerde oyun sayısında artış olursa admin bu masalarda o oyunları da oynatabilir.<br>
+Oyun yaratıldığında masanın yönetimi için TableGameManager oluşturulur. <br>
+Bu eleman oyunun geri kalanı ile masa arasındaki bağlantıyı sağlar ve oyunu yönetmek için 5 eleman yaratır. <br>
+1-)TablePlayerManager <br>
+2-)GamePlayerManager<br>
+3-)GameUISpawnManager<br>
+4-)GamePlayerSpawnManager<br>
+5-)OmahaEngine<br>
+Omaha engine, omaha oyununa ait tüm işlemleri gerçekleştirir. İleride yeni bir oyun eklenmesi için sadece bu eleman'ın değiştirilmesi yetecektir.<br>
+Omaha Engine oyunu yönetmek için 3 elemana sahiptir. <br>
+1-) TurnManager<br>
+2-) ChipManager<br>
+3-) Dealer<br>
+Oyun oluşturma işlemi işlemi yapan admin'in adı ile birlikte database'e kayıt edilir.<br>
 
 ---Masaya'a giriş---<br>
 Kullanıcı masaya giriş yaptığında seyirci ekranından masayı izler taki bir sandalyeye oturana kadar. <br>
