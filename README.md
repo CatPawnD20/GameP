@@ -1,3 +1,5 @@
+!!!Proje tamamlanmıştır.!!!<br>
+Bu readMe'nin güncel  değildir!!!
 # GameP
 Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında içinde farklı oyun tiplerini barındırabilecek birden çok oyun odası olan bir yapıda  tasarlanmıştır.
 
