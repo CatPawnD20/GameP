@@ -1,5 +1,6 @@
 !!!Proje tamamlanmıştır.!!!<br>
-Bu readMe, projenin geliştirilme aşamasında yazılmıştır, güncel  değildir!!!<br>
+Demo Video -> https://youtu.be/QXpK1UOJWVM
+Bu repository, projenin geliştirilme aşamasındandır, güncel  değildir!!!<br>
 # GameP
 Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında içinde farklı oyun tiplerini barındırabilecek birden çok oyun odası olan bir yapıda  tasarlanmıştır.
 
@@ -39,8 +40,8 @@ Kullanıcıların rakeBack oranı dinamiktir.<br>
 Kullanıcıya birisi referans olmuş ise referans olan kişinin rakeBack oranı da dinamiktir. UserCreation aşamasında belirtilirler.<br>
 Kullanıcı oluşturma işlemi işlemi yapan admin'in adı ile birlikte database'e kayıt edilir.<br>
 
----Bakiye Ekleme---(şuan mevcut değil)<br>
----Bakiye Çekme---(şuan mevcut değil)<br>
+---Bakiye Ekleme---<br>
+---Bakiye Çekme---<br>
 
 ----User Tipleri---<br>
 -Admin<br>
@@ -81,8 +82,6 @@ Süresi dahilinde karar vermeyen oyuncular için en uygun süre bitiminde verili
 Kendi turn'ünde olmayan oyuncular preMove yapabilirler.<br>
 Yeterli bakiyesi olan en az 2 oyuncu olması dahilinde turlar birbiri ardına dağıtılmaya devam edilir.<br>
 
----Stop Deal---(şuan mevcut değil (Admin Yetkisinde))<br>
-
 ---Oyundan ayrılma---<br>
 Ayrılma işlemi bakiye'nin bitmesi, kullanıcı isteğiyle yahut kullanıcının düşmesi ile olabilir. <br>
 Bu işlem sırasında kullanıcının kalan bakiyesi ve oyunda elde ettiği rakeBack miktarı database'e yazılır.<br>
@@ -91,9 +90,9 @@ Oyundan ayrılan kullanıcı izleyici ekranına geri döner.<br>
 ---Masadan ayrılma---<br>
 Güncel lobby'ye geçiş yapılır.<br>
 
----Kick Player From Table---(şuan mevcut değil)<br>
----Kick Player From Application--- (şuan mevcut değil)<br>
----Dismiss Table--- (şuan mevcut değil)<br>
----Show Casino Earnings--- (şuan mevcut değil)<br>
+---Stop Deal---(Admin Yetkisinde)<br>
+---Dismiss Table---(Admin Yetkisinde)<br>
+
+---Show Casino Earnings--- (Admin Yetkisinde)<br>
 
 İsteiğiniz doğrultusunda detaylı dökümantasyon için OneNote paylaşım linki ve Miro'da projeye ekleme isteği yollayabilirim.<br>
