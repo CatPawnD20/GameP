@@ -1,5 +1,5 @@
 !!!Proje tamamlanmıştır.!!!<br>
-Demo Video -> https://youtu.be/QXpK1UOJWVM
+Demo Video -> https://youtu.be/QXpK1UOJWVM<br>
 Bu repository, projenin geliştirilme aşamasındandır, güncel  değildir!!!<br>
 # GameP
 Bu uygulama, online çok oyunculu bir casino altyapısı oluşturmanın yanında içinde farklı oyun tiplerini barındırabilecek birden çok oyun odası olan bir yapıda  tasarlanmıştır.
