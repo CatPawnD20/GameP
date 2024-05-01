@@ -93,4 +93,4 @@ The user returns to the lobby screen.<br>
 
 ---Show Casino Earnings--- (Under Admin Authority)<br>
 
-İsteiğiniz doğrultusunda detaylı dökümantasyon için OneNote paylaşım linki ve Miro'da projeye ekleme isteği yollayabilirim.<br>
+Upon your request, I can send you a OneNote sharing link for detailed documentation and a request to add it to the project in Miro.<br>
